@@ -1,28 +1,1229 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project">
-    <meta name="author" content="Lovable">
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App">
-    <meta property="og:description" content="Lovable Generated Project">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a9fe7425-b52b-4d6d-a84f-4aa4829b9fce/id-preview-76236e90--61a27c8c-edf7-4a7b-877f-0772547740de.lovable.app-1765962598116.png">
+    <title>Magnet Love - Custom Photo Magnets</title>
+    <meta name="description" content="Transform your cherished photos into beautiful handcrafted magnets. Square and round formats – perfect for fridges, lockers, and heartfelt gifts.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:wght@400;500;600;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background: hsl(210, 25%, 97%);
+            --foreground: hsl(215, 25%, 15%);
+            --card: hsl(210, 30%, 99%);
+            --card-foreground: hsl(215, 25%, 15%);
+            --primary: hsl(199, 89%, 48%);
+            --primary-foreground: hsl(210, 30%, 99%);
+            --secondary: hsl(210, 20%, 93%);
+            --secondary-foreground: hsl(215, 25%, 15%);
+            --muted: hsl(210, 15%, 90%);
+            --muted-foreground: hsl(215, 15%, 45%);
+            --accent: hsl(217, 91%, 60%);
+            --accent-foreground: hsl(210, 30%, 99%);
+            --border: hsl(210, 20%, 88%);
+            --sky-deep: hsl(210, 80%, 42%);
+            --font-heading: 'Besley', serif;
+            --font-body: 'Almarai', sans-serif;
+        }
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@Lovable">
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a9fe7425-b52b-4d6d-a84f-4aa4829b9fce/id-preview-76236e90--61a27c8c-edf7-4a7b-877f-0772547740de.lovable.app-1765962598116.png">
-    <script type="module" crossorigin="" src="/assets/index-C_Xx_qAq.js"></script>
-    <link rel="stylesheet" crossorigin="" href="/assets/index-BfnVJFph.css">
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <style type="text/css">:where(html[dir="ltr"]),:where([data-sonner-toaster][dir="ltr"]){--toast-icon-margin-start: -3px;--toast-icon-margin-end: 4px;--toast-svg-margin-start: -1px;--toast-svg-margin-end: 0px;--toast-button-margin-start: auto;--toast-button-margin-end: 0;--toast-close-button-start: 0;--toast-close-button-end: unset;--toast-close-button-transform: translate(-35%, -35%)}:where(html[dir="rtl"]),:where([data-sonner-toaster][dir="rtl"]){--toast-icon-margin-start: 4px;--toast-icon-margin-end: -3px;--toast-svg-margin-start: 0px;--toast-svg-margin-end: -1px;--toast-button-margin-start: 0;--toast-button-margin-end: auto;--toast-close-button-start: unset;--toast-close-button-end: 0;--toast-close-button-transform: translate(35%, -35%)}:where([data-sonner-toaster]){position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1: hsl(0, 0%, 99%);--gray2: hsl(0, 0%, 97.3%);--gray3: hsl(0, 0%, 95.1%);--gray4: hsl(0, 0%, 93%);--gray5: hsl(0, 0%, 90.9%);--gray6: hsl(0, 0%, 88.7%);--gray7: hsl(0, 0%, 85.8%);--gray8: hsl(0, 0%, 78%);--gray9: hsl(0, 0%, 56.1%);--gray10: hsl(0, 0%, 52.3%);--gray11: hsl(0, 0%, 43.5%);--gray12: hsl(0, 0%, 9%);--border-radius: 8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:none;z-index:999999999;transition:transform .4s ease}:where([data-sonner-toaster][data-lifted="true"]){transform:translateY(-10px)}@media (hover: none) and (pointer: coarse){:where([data-sonner-toaster][data-lifted="true"]){transform:none}}:where([data-sonner-toaster][data-x-position="right"]){right:var(--offset-right)}:where([data-sonner-toaster][data-x-position="left"]){left:var(--offset-left)}:where([data-sonner-toaster][data-x-position="center"]){left:50%;transform:translate(-50%)}:where([data-sonner-toaster][data-y-position="top"]){top:var(--offset-top)}:where([data-sonner-toaster][data-y-position="bottom"]){bottom:var(--offset-bottom)}:where([data-sonner-toast]){--y: translateY(100%);--lift-amount: calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);filter:blur(0);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:none;overflow-wrap:anywhere}:where([data-sonner-toast][data-styled="true"]){padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px #0000001a;width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}:where([data-sonner-toast]:focus-visible){box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast][data-y-position="top"]){top:0;--y: translateY(-100%);--lift: 1;--lift-amount: calc(1 * var(--gap))}:where([data-sonner-toast][data-y-position="bottom"]){bottom:0;--y: translateY(100%);--lift: -1;--lift-amount: calc(var(--lift) * var(--gap))}:where([data-sonner-toast]) :where([data-description]){font-weight:400;line-height:1.4;color:inherit}:where([data-sonner-toast]) :where([data-title]){font-weight:500;line-height:1.5;color:inherit}:where([data-sonner-toast]) :where([data-icon]){display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}:where([data-sonner-toast][data-promise="true"]) :where([data-icon])>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}:where([data-sonner-toast]) :where([data-icon])>*{flex-shrink:0}:where([data-sonner-toast]) :where([data-icon]) svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}:where([data-sonner-toast]) :where([data-content]){display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;cursor:pointer;outline:none;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}:where([data-sonner-toast]) :where([data-button]):focus-visible{box-shadow:0 0 0 2px #0006}:where([data-sonner-toast]) :where([data-button]):first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}:where([data-sonner-toast]) :where([data-cancel]){color:var(--normal-text);background:rgba(0,0,0,.08)}:where([data-sonner-toast][data-theme="dark"]) :where([data-cancel]){background:rgba(255,255,255,.3)}:where([data-sonner-toast]) :where([data-close-button]){position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;color:var(--gray12);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}[data-sonner-toast] [data-close-button]{background:var(--gray1)}:where([data-sonner-toast]) :where([data-close-button]):focus-visible{box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast]) :where([data-disabled="true"]){cursor:not-allowed}:where([data-sonner-toast]):hover :where([data-close-button]):hover{background:var(--gray2);border-color:var(--gray5)}:where([data-sonner-toast][data-swiping="true"]):before{content:"";position:absolute;left:-50%;right:-50%;height:100%;z-index:-1}:where([data-sonner-toast][data-y-position="top"][data-swiping="true"]):before{bottom:50%;transform:scaleY(3) translateY(50%)}:where([data-sonner-toast][data-y-position="bottom"][data-swiping="true"]):before{top:50%;transform:scaleY(3) translateY(-50%)}:where([data-sonner-toast][data-swiping="false"][data-removed="true"]):before{content:"";position:absolute;inset:0;transform:scaleY(2)}:where([data-sonner-toast]):after{content:"";position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}:where([data-sonner-toast][data-mounted="true"]){--y: translateY(0);opacity:1}:where([data-sonner-toast][data-expanded="false"][data-front="false"]){--scale: var(--toasts-before) * .05 + 1;--y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}:where([data-sonner-toast])>*{transition:opacity .4s}:where([data-sonner-toast][data-expanded="false"][data-front="false"][data-styled="true"])>*{opacity:0}:where([data-sonner-toast][data-visible="false"]){opacity:0;pointer-events:none}:where([data-sonner-toast][data-mounted="true"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}:where([data-sonner-toast][data-removed="true"][data-front="true"][data-swipe-out="false"]){--y: translateY(calc(var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="false"]){--y: translateY(40%);opacity:0;transition:transform .5s,opacity .2s}:where([data-sonner-toast][data-removed="true"][data-front="false"]):before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount-y, 0px)) translate(var(--swipe-amount-x, 0px));transition:none}[data-sonner-toast][data-swiped=true]{user-select:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=left]{animation-name:swipe-out-left}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=right]{animation-name:swipe-out-right}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=up]{animation-name:swipe-out-up}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=down]{animation-name:swipe-out-down}@keyframes swipe-out-left{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) - 100%));opacity:0}}@keyframes swipe-out-right{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) + 100%));opacity:0}}@keyframes swipe-out-up{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) - 100%));opacity:0}}@keyframes swipe-out-down{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) + 100%));opacity:0}}@media (max-width: 600px){[data-sonner-toaster]{position:fixed;right:var(--mobile-offset-right);left:var(--mobile-offset-left);width:100%}[data-sonner-toaster][dir=rtl]{left:calc(var(--mobile-offset-left) * -1)}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset-left) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset-left)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--mobile-offset-bottom)}[data-sonner-toaster][data-y-position=top]{top:var(--mobile-offset-top)}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset-left);right:var(--mobile-offset-right);transform:none}}[data-sonner-toaster][data-theme=light]{--normal-bg: #fff;--normal-border: var(--gray4);--normal-text: var(--gray12);--success-bg: hsl(143, 85%, 96%);--success-border: hsl(145, 92%, 91%);--success-text: hsl(140, 100%, 27%);--info-bg: hsl(208, 100%, 97%);--info-border: hsl(221, 91%, 91%);--info-text: hsl(210, 92%, 45%);--warning-bg: hsl(49, 100%, 97%);--warning-border: hsl(49, 91%, 91%);--warning-text: hsl(31, 92%, 45%);--error-bg: hsl(359, 100%, 97%);--error-border: hsl(359, 100%, 94%);--error-text: hsl(360, 100%, 45%)}[data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg: #fff;--normal-border: var(--gray3);--normal-text: var(--gray12)}[data-sonner-toaster][data-theme=dark]{--normal-bg: #000;--normal-bg-hover: hsl(0, 0%, 12%);--normal-border: hsl(0, 0%, 20%);--normal-border-hover: hsl(0, 0%, 25%);--normal-text: var(--gray1);--success-bg: hsl(150, 100%, 6%);--success-border: hsl(147, 100%, 12%);--success-text: hsl(150, 86%, 65%);--info-bg: hsl(215, 100%, 6%);--info-border: hsl(223, 100%, 12%);--info-text: hsl(216, 87%, 65%);--warning-bg: hsl(64, 100%, 6%);--warning-border: hsl(60, 100%, 12%);--warning-text: hsl(46, 87%, 65%);--error-bg: hsl(358, 76%, 10%);--error-border: hsl(357, 89%, 16%);--error-text: hsl(358, 100%, 81%)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button]{background:var(--normal-bg);border-color:var(--normal-border);color:var(--normal-text)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button]:hover{background:var(--normal-bg-hover);border-color:var(--normal-border-hover)}[data-rich-colors=true][data-sonner-toast][data-type=success],[data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=info],[data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning],[data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=error],[data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size: 16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:nth-child(1){animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}to{opacity:.15}}@media (prefers-reduced-motion){[data-sonner-toast],[data-sonner-toast]>*,.sonner-loading-bar{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}
-    </style></head>
+        body {
+            font-family: var(--font-body);
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
 
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+
+        a { text-decoration: none; color: inherit; }
+
+        img { max-width: 100%; height: auto; display: block; }
+
+        .container { max-width: 80rem; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: var(--background);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+        .header-left { display: flex; align-items: center; gap: 2rem; }
+        .logo { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.025em; font-family: var(--font-heading); }
+        .nav { display: none; align-items: center; gap: 1.5rem; }
+        .nav a { font-size: 0.875rem; color: var(--muted-foreground); transition: color 0.2s; }
+        .nav a:hover { color: var(--primary); }
+        .header-actions { display: flex; align-items: center; gap: 1rem; }
+        .icon-btn {
+            padding: 0.5rem;
+            border-radius: 50%;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .icon-btn:hover { background: var(--secondary); }
+        .icon-btn svg { width: 1.25rem; height: 1.25rem; color: var(--foreground); }
+
+        @media (min-width: 768px) { .nav { display: flex; } }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            min-height: 90vh;
+            overflow: hidden;
+        }
+        .hero-svg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 5rem 0;
+        }
+        .hero-grid {
+            display: grid;
+            gap: 3rem;
+            width: 100%;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(14, 165, 233, 0.1);
+            color: var(--primary);
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .hero h1 span { color: var(--primary); }
+        .hero-text {
+            font-size: 1.125rem;
+            color: var(--muted-foreground);
+            line-height: 1.75;
+            max-width: 36rem;
+            margin-bottom: 2.5rem;
+        }
+        .hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.25rem 2.5rem;
+            background: var(--primary);
+            color: var(--primary-foreground);
+            font-weight: 600;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.3);
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 25px -5px rgba(14, 165, 233, 0.4); }
+        .btn-primary svg { width: 1.25rem; height: 1.25rem; margin-left: 0.5rem; }
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.25rem 2.5rem;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            font-weight: 600;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-outline:hover { background: var(--primary); color: var(--primary-foreground); }
+        .hero-image-wrap {
+            background: var(--card);
+            border-radius: 1rem;
+            padding: 1rem;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+            border: 1px solid var(--border);
+        }
+        .hero-image-wrap img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 0.75rem;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-grid { grid-template-columns: 1fr 1fr; }
+            .hero-image-wrap { margin-left: 2rem; }
+        }
+
+        /* Sections */
+        .section { padding: 6rem 0; }
+        .section-card { background: var(--card); }
+        .section-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary);
+            font-weight: 500;
+        }
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            margin-top: 1rem;
+            line-height: 1.2;
+        }
+
+        /* Our Story */
+        .story-intro {
+            display: grid;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+        .story-intro p {
+            font-size: 1.25rem;
+            color: var(--muted-foreground);
+            line-height: 1.75;
+        }
+        .story-founder-wrap {
+            background: var(--secondary);
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+        }
+        .story-founder-wrap img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+
+        @media (min-width: 1024px) {
+            .story-intro { grid-template-columns: 1fr 1fr; }
+            .story-founder-wrap { padding: 2.5rem; }
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 5rem;
+        }
+        .stat-card {
+            background: var(--secondary);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+        .stat-card.gradient {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: var(--primary-foreground);
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .stat-card.gradient .stat-label { color: rgba(255,255,255,0.8); }
+        .stat-card:not(.gradient) .stat-number { color: var(--primary); }
+        .stat-label { color: var(--muted-foreground); }
+
+        @media (min-width: 768px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+
+        /* Mission */
+        .mission-grid { display: grid; gap: 2rem; }
+        .mission-quote {
+            background: rgba(14, 165, 233, 0.05);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 1rem 1rem 0;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .mission-quote p {
+            font-size: 1.25rem;
+            font-family: var(--font-heading);
+            line-height: 1.75;
+            font-style: italic;
+        }
+        .mission-quote .author {
+            margin-top: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            font-style: normal;
+        }
+        .mini-features { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .mini-feature {
+            background: var(--secondary);
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+            text-align: center;
+        }
+        .mini-feature-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            background: rgba(14, 165, 233, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.75rem;
+        }
+        .mini-feature-icon svg { width: 1.5rem; height: 1.5rem; color: var(--primary); }
+        .mini-feature-icon.accent { background: rgba(59, 130, 246, 0.1); }
+        .mini-feature-icon.accent svg { color: var(--accent); }
+        .mini-feature-title { font-family: var(--font-heading); font-weight: 600; font-size: 0.875rem; }
+
+        .mission-images { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .mission-image-wrap {
+            background: var(--secondary);
+            border-radius: 1rem;
+            padding: 0.75rem;
+        }
+        .mission-image-wrap img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 0.75rem;
+        }
+        .mission-image-wrap.offset { margin-top: 2rem; }
+        .mission-image-wrap.wide {
+            grid-column: span 2;
+            margin-top: -2rem;
+        }
+        .mission-image-wrap.wide img { aspect-ratio: 16/9; }
+
+        @media (min-width: 1024px) {
+            .mission-grid { grid-template-columns: 5fr 7fr; }
+        }
+
+        /* Features */
+        .features-header {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        .features-header p {
+            font-size: 1.125rem;
+            color: var(--muted-foreground);
+            max-width: 28rem;
+        }
+
+        @media (min-width: 1024px) {
+            .features-header {
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        }
+
+        .features-main { display: grid; gap: 1.5rem; margin-bottom: 3rem; }
+        .feature-big {
+            background: linear-gradient(135deg, var(--primary), var(--sky-deep));
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            color: var(--primary-foreground);
+        }
+        .feature-big-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .feature-icon-big {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1rem;
+            background: rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .feature-icon-big svg { width: 2rem; height: 2rem; }
+        .feature-number {
+            font-size: 3.75rem;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            opacity: 0.2;
+        }
+        .feature-big h3 {
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .feature-big p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            opacity: 0.8;
+        }
+
+        .features-side { display: grid; gap: 1.5rem; }
+        .feature-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 1.5rem;
+            padding: 2rem;
+        }
+        .feature-card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background: rgba(14, 165, 233, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .feature-icon svg { width: 1.5rem; height: 1.5rem; color: var(--primary); }
+        .feature-icon.accent { background: rgba(59, 130, 246, 0.2); }
+        .feature-icon.accent svg { color: var(--accent); }
+        .feature-card-number {
+            font-size: 1.875rem;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: rgba(100,116,139,0.3);
+        }
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .feature-card p { color: var(--muted-foreground); }
+
+        @media (min-width: 768px) {
+            .features-main { grid-template-columns: 7fr 5fr; }
+        }
+
+        .features-bottom { display: grid; gap: 1.5rem; }
+        .feature-small {
+            background: var(--secondary);
+            border-radius: 1.5rem;
+            padding: 2rem;
+        }
+        .feature-small-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background: rgba(14, 165, 233, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .feature-small-icon svg { width: 1.5rem; height: 1.5rem; color: var(--primary); }
+        .feature-small-icon.accent { background: rgba(59, 130, 246, 0.2); }
+        .feature-small-icon.accent svg { color: var(--accent); }
+        .feature-small h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .feature-small p { color: var(--muted-foreground); font-size: 0.875rem; }
+
+        @media (min-width: 768px) { .features-bottom { grid-template-columns: repeat(3, 1fr); } }
+
+        /* Products */
+        .products-header { text-align: center; margin-bottom: 4rem; }
+        .products-header p {
+            font-size: 1.125rem;
+            color: var(--muted-foreground);
+            margin-top: 1rem;
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .products-grid {
+            display: grid;
+            gap: 2.5rem;
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+        .product-card {
+            background: var(--background);
+            border-radius: 1.5rem;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            padding: 1.5rem;
+        }
+        .product-image-wrap {
+            aspect-ratio: 1;
+            border-radius: 1rem;
+            overflow: hidden;
+            background: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+        .product-image-wrap img { width: 100%; height: 100%; object-fit: cover; }
+        .product-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        .product-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .product-card .subtitle {
+            color: var(--muted-foreground);
+            margin-top: 0.25rem;
+        }
+        .product-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            background: rgba(14, 165, 233, 0.1);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-icon .shape {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 0.25rem;
+            background: rgba(14, 165, 233, 0.3);
+        }
+        .product-icon.accent { background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.2); }
+        .product-icon.accent .shape {
+            width: 1.25rem;
+            height: 1.75rem;
+            background: rgba(59, 130, 246, 0.3);
+        }
+        .product-price {
+            font-size: 1.5rem;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        .product-price span {
+            font-size: 1rem;
+            font-family: var(--font-body);
+            font-weight: 400;
+            color: var(--muted-foreground);
+        }
+        .btn-full {
+            width: 100%;
+            padding: 1rem;
+            background: var(--primary);
+            color: var(--primary-foreground);
+            font-weight: 600;
+            border-radius: 0.75rem;
+            font-size: 1.125rem;
+            border: none;
+            cursor: pointer;
+            transition: box-shadow 0.2s;
+        }
+        .btn-full:hover { box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.2); }
+
+        @media (min-width: 768px) { .products-grid { grid-template-columns: 1fr 1fr; } }
+
+        /* Subscribe */
+        .subscribe-grid { display: grid; gap: 2rem; }
+        .subscribe-main {
+            background: linear-gradient(135deg, var(--secondary), var(--muted));
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+        }
+        .subscribe-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .subscribe-badge-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .subscribe-badge-icon svg { width: 1.25rem; height: 1.25rem; color: var(--primary-foreground); }
+        .subscribe-main h2 {
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .subscribe-main > p {
+            font-size: 1.125rem;
+            color: var(--muted-foreground);
+            margin-bottom: 2rem;
+            max-width: 32rem;
+        }
+        .subscribe-form { display: flex; flex-direction: column; gap: 1rem; }
+        .subscribe-form input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border-radius: 0.75rem;
+            background: var(--background);
+            border: 1px solid var(--border);
+            color: var(--foreground);
+            font-size: 1rem;
+        }
+        .subscribe-form input::placeholder { color: var(--muted-foreground); }
+        .subscribe-form input:focus { outline: none; box-shadow: 0 0 0 2px var(--primary); }
+        .subscribe-form button {
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: var(--primary-foreground);
+            font-weight: 600;
+            border-radius: 0.75rem;
+            border: none;
+            cursor: pointer;
+            transition: box-shadow 0.2s;
+        }
+        .subscribe-form button:hover { box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.2); }
+
+        @media (min-width: 640px) { .subscribe-form { flex-direction: row; } }
+        @media (min-width: 1024px) {
+            .subscribe-main { padding: 3.5rem; }
+            .subscribe-grid { grid-template-columns: 7fr 5fr; }
+        }
+
+        .subscribe-benefits { display: grid; gap: 1rem; }
+        .benefit-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+        .benefit-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 0.75rem;
+            background: rgba(59, 130, 246, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .benefit-icon svg { width: 1.75rem; height: 1.75rem; color: var(--accent); }
+        .benefit-icon.primary { background: rgba(14, 165, 233, 0.1); }
+        .benefit-icon.primary svg { color: var(--primary); }
+        .benefit-card h3 { font-family: var(--font-heading); font-weight: 600; }
+        .benefit-card p { font-size: 0.875rem; color: var(--muted-foreground); }
+
+        /* FAQ */
+        .faq-header { text-align: center; margin-bottom: 4rem; }
+        .faq-list { display: flex; flex-direction: column; gap: 1rem; max-width: 56rem; margin: 0 auto; }
+        .faq-item {
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+        .faq-item summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem;
+            cursor: pointer;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1.125rem;
+            list-style: none;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary svg { width: 1.25rem; height: 1.25rem; color: var(--muted-foreground); transition: transform 0.2s; }
+        .faq-item[open] summary svg { transform: rotate(180deg); }
+        .faq-answer { padding: 0 1.5rem 1.5rem; color: var(--muted-foreground); }
+
+        /* CTA */
+        .cta {
+            position: relative;
+            padding: 8rem 0;
+            overflow: hidden;
+        }
+        .cta-svg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .cta-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+        .cta-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 9999px;
+            padding: 0.5rem 1.25rem;
+            margin-bottom: 2rem;
+            color: var(--primary-foreground);
+            font-weight: 500;
+        }
+        .cta-badge-dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background: var(--primary-foreground);
+        }
+        .cta h2 {
+            font-size: clamp(2rem, 4vw, 3.75rem);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--primary-foreground);
+        }
+        .cta > .cta-content > p {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 2.5rem;
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.75;
+        }
+        .cta-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+        .btn-white {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.25rem 3rem;
+            background: var(--primary-foreground);
+            color: var(--primary);
+            font-weight: 700;
+            border-radius: 0.75rem;
+            font-size: 1.125rem;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.2);
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-white:hover { transform: translateY(-4px); }
+        .btn-white svg { width: 1.25rem; height: 1.25rem; margin-left: 0.5rem; }
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.25rem 2.5rem;
+            border: 2px solid var(--primary-foreground);
+            color: var(--primary-foreground);
+            font-weight: 600;
+            border-radius: 0.75rem;
+            font-size: 1.125rem;
+            background: transparent;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-ghost:hover { background: rgba(255,255,255,0.1); }
+
+        /* Footer */
+        .footer {
+            background: var(--background);
+            border-top: 1px solid var(--border);
+            padding: 4rem 0;
+        }
+        .footer-grid { display: grid; gap: 3rem; }
+        .footer-brand p {
+            color: var(--muted-foreground);
+            margin-top: 1rem;
+            max-width: 28rem;
+        }
+        .footer-social { display: flex; gap: 1rem; margin-top: 1.5rem; }
+        .social-link {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted-foreground);
+            transition: all 0.2s;
+        }
+        .social-link:hover { color: var(--primary); background: rgba(14, 165, 233, 0.1); }
+        .social-link svg { width: 1.25rem; height: 1.25rem; }
+        .footer-links h4 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+        .footer-links a { color: var(--muted-foreground); transition: color 0.2s; }
+        .footer-links a:hover { color: var(--primary); }
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            margin-top: 3rem;
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .footer-bottom p { font-size: 0.875rem; color: var(--muted-foreground); }
+        .footer-legal { display: flex; gap: 1.5rem; font-size: 0.875rem; }
+        .footer-legal a { color: var(--muted-foreground); transition: color 0.2s; }
+        .footer-legal a:hover { color: var(--primary); }
+
+        @media (min-width: 768px) {
+            .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+            .footer-bottom { flex-direction: row; justify-content: space-between; }
+        }
+    </style>
+</head>
 <body>
-<div id="root"><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section><div class="min-h-screen bg-background text-foreground font-body"><header class="sticky top-0 z-50 bg-background border-b border-border"><div class="max-w-7xl mx-auto px-6 py-4"><div class="flex items-center justify-between"><div class="flex items-center gap-8"><a href="/" class="flex items-center"><span class="text-2xl font-semibold tracking-tight font-heading text-foreground">Magnet Love</span></a><nav class="hidden md:flex items-center gap-6"><a href="/collections/photo-magnets" class="text-sm text-muted-foreground hover:text-primary">Photo Magnets</a><a href="/collections/save-the-date" class="text-sm text-muted-foreground hover:text-primary">Save The Date</a><a href="/pages/about" class="text-sm text-muted-foreground hover:text-primary">Our Story</a><a href="/pages/contact" class="text-sm text-muted-foreground hover:text-primary">Contact</a></nav></div><div class="flex items-center gap-4"><button class="p-2 hover:bg-secondary rounded-full" aria-label="Search"><svg fill="none" class="w-5 h-5 text-foreground" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 1 1 2.85 3.5a5.784 5.784 0 0 1 8.18 8.18m.26 1.12a6.78 6.78 0 1 1 .72-.7l5.4 5.4a.5.5 0 1 1-.71.7z" clip-rule="evenodd"></path></svg></button><button class="p-2 hover:bg-secondary rounded-full" aria-label="Account"><svg fill="none" class="w-5 h-5 text-foreground" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M6 4.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8m5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15M9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35" clip-rule="evenodd"></path></svg></button><button class="p-2 hover:bg-secondary rounded-full" aria-label="Cart"><svg fill="none" class="w-5 h-5 text-foreground" viewBox="0 0 40 40"><path fill="currentColor" fill-rule="evenodd" d="M15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33L28.4 11.8zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1-9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z"></path></svg></button></div></div></div></header><main><section data-section-handle="image-banner" data-section-type="hero" class="relative min-h-[90vh] overflow-hidden"><svg class="w-full h-full" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0px;"><rect width="1440" height="900" fill="hsl(210, 25%, 97%)"></rect><circle cx="1200" cy="150" r="300" fill="hsl(199, 89%, 48%)" fill-opacity="0.08"></circle><circle cx="1350" cy="450" r="200" fill="hsl(217, 91%, 60%)" fill-opacity="0.06"></circle><circle cx="100" cy="700" r="250" fill="hsl(199, 89%, 48%)" fill-opacity="0.05"></circle><rect x="1100" y="500" width="120" height="120" rx="8" fill="hsl(210, 20%, 93%)" stroke="hsl(199, 89%, 48%)" stroke-width="2"></rect><rect x="1260" y="620" width="80" height="80" rx="6" fill="hsl(199, 89%, 48%)" fill-opacity="0.15"></rect><rect x="50" y="300" width="100" height="100" rx="8" fill="hsl(210, 20%, 93%)" stroke="hsl(210, 20%, 88%)" stroke-width="2"></rect><rect x="1300" y="180" width="70" height="70" rx="6" fill="hsl(217, 91%, 60%)" fill-opacity="0.12"></rect><path d="M0 600 Q 400 500 800 600 T 1440 550" stroke="hsl(199, 89%, 48%)" stroke-width="2" stroke-opacity="0.1" fill="none"></path><path d="M0 650 Q 350 550 700 650 T 1440 600" stroke="hsl(217, 91%, 60%)" stroke-width="2" stroke-opacity="0.08" fill="none"></path></svg><div class="relative z-10 max-w-7xl mx-auto px-6 py-20 min-h-[90vh] flex items-center"><div class="grid lg:grid-cols-2 gap-12 items-center w-full"><div><span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">Handmade with Love in Arizona 🌵</span><h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-semibold leading-tight mb-6 text-foreground">Turn Your <span class="text-primary">Memories</span> Into Magnets</h1><p class="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed max-w-xl">Transform your cherished photos into beautiful handcrafted magnets. Square and round formats – perfect for fridges, lockers, and heartfelt gifts.</p><div class="flex flex-wrap gap-4"><a href="/collections/all" class="inline-flex items-center justify-center px-10 py-5 bg-primary text-primary-foreground font-semibold rounded-lg text-lg shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-0.5">Shop Now<svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a><a href="/pages/about" class="inline-flex items-center justify-center px-10 py-5 border-2 border-primary text-primary font-semibold rounded-lg text-lg hover:bg-primary hover:text-primary-foreground">Our Story</a></div></div><div class="relative lg:pl-8"><div class="bg-card rounded-2xl p-4 shadow-2xl border border-border"><img src="/assets/hero-magnets-fridge-OYrMm6sJ.jpg" alt="Square photo magnets on refrigerator" class="w-full aspect-square object-cover rounded-xl"></div></div></div></div></section><section data-section-handle="multirow" data-section-type="story" class="py-24 bg-card"><div class="max-w-7xl mx-auto px-6"><div class="grid lg:grid-cols-2 gap-16 items-center mb-20"><div><span class="text-sm uppercase tracking-widest text-primary font-medium">Our Story</span><h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold mt-4 mb-8 text-foreground leading-tight">From Photo Lover to Magnet Maker</h2><p class="text-xl text-muted-foreground leading-relaxed">Hi, I'm Ivette! As a passionate photo taker and magnet collector, I created Magnet Love to combine my two loves. With thousands of photos stored digitally, I realized what better way of displaying them than on beautiful square magnets!</p></div><div class="bg-secondary rounded-3xl p-6 lg:p-10"><img src="/assets/founder-portrait-DF6T_08d.jpg" alt="Ivette, founder of Magnet Love" class="w-full aspect-[4/5] object-cover rounded-2xl"></div></div><div class="grid md:grid-cols-4 gap-6 mb-20"><div class="bg-gradient-to-br from-primary to-accent rounded-2xl p-8 text-primary-foreground"><div class="text-5xl font-heading font-bold mb-2">2000+</div><div class="text-primary-foreground/80">Happy Customers</div></div><div class="bg-secondary rounded-2xl p-8"><div class="text-5xl font-heading font-bold text-primary mb-2">10k+</div><div class="text-muted-foreground">Magnets Created</div></div><div class="bg-secondary rounded-2xl p-8"><div class="text-5xl font-heading font-bold text-primary mb-2">5★</div><div class="text-muted-foreground">Average Rating</div></div><div class="bg-secondary rounded-2xl p-8"><div class="text-5xl font-heading font-bold text-primary mb-2">AZ</div><div class="text-muted-foreground">Based in Arizona 🌵</div></div></div><div class="grid lg:grid-cols-12 gap-8"><div class="lg:col-span-5 flex flex-col justify-center"><div class="bg-primary/5 border-l-4 border-primary rounded-r-2xl p-8 mb-8"><p class="text-xl font-heading text-foreground leading-relaxed italic">"At Magnet Love, we transform your cherished photos into stunning, handmade magnets that preserve your memories for years to come."</p><p class="mt-4 font-semibold text-primary">— Ivette, Founder</p></div><div class="grid grid-cols-2 gap-4"><div class="bg-secondary rounded-xl p-5 text-center"><div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-3"><svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></div><div class="font-heading font-semibold text-foreground text-sm">Made with Love</div></div><div class="bg-secondary rounded-xl p-5 text-center"><div class="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mx-auto mb-3"><svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg></div><div class="font-heading font-semibold text-foreground text-sm">Premium Quality</div></div></div></div><div class="lg:col-span-7 grid grid-cols-2 gap-4"><div class="bg-secondary rounded-2xl p-3"><img src="/assets/magnets-handmade-process-J8arblBo.jpg" alt="Handcrafted square photo magnets" class="w-full aspect-square object-cover rounded-xl"></div><div class="bg-secondary rounded-2xl p-3 mt-8"><img src="/assets/square-magnets-closeup-CSoEi5eN.jpg" alt="Square magnets closeup on marble" class="w-full aspect-square object-cover rounded-xl"></div><div class="bg-secondary rounded-2xl p-3 -mt-8 col-span-2"><img src="/assets/magnets-collection-grid-ChfBV8_Z.jpg" alt="Collection of square photo magnets" class="w-full aspect-video object-cover rounded-xl"></div></div></div></div></section><section data-section-handle="multicolumn" data-section-type="features" class="py-24 bg-background"><div class="max-w-7xl mx-auto px-6"><div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16"><div><span class="text-sm uppercase tracking-widest text-primary font-medium">Why Choose Us</span><h2 class="text-4xl md:text-5xl font-heading font-semibold mt-4 text-foreground">What Makes Us Special</h2></div><p class="text-lg text-muted-foreground max-w-md">Every magnet tells a story. Here's why thousands of customers trust Magnet Love.</p></div><div class="grid md:grid-cols-12 gap-6 mb-12"><div class="md:col-span-7 bg-gradient-to-br from-primary to-sky-deep rounded-3xl p-10 text-primary-foreground"><div class="flex items-start justify-between mb-8"><div class="w-16 h-16 rounded-2xl bg-primary-foreground/20 flex items-center justify-center"><svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></div><span class="text-6xl font-heading font-bold opacity-20">01</span></div><h3 class="text-3xl font-heading font-semibold mb-4">Handcrafted with Care</h3><p class="text-primary-foreground/80 text-lg leading-relaxed">Each magnet is individually made by hand, ensuring quality and attention to detail. No mass production – just genuine craftsmanship.</p></div><div class="md:col-span-5 grid gap-6"><div class="bg-card border border-border rounded-3xl p-8"><div class="flex items-center gap-4 mb-4"><div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg></div><span class="text-3xl font-heading font-bold text-muted-foreground/30">02</span></div><h3 class="text-xl font-heading font-semibold mb-2 text-foreground">Premium Materials</h3><p class="text-muted-foreground">High-quality materials that preserve your memories beautifully for years.</p></div><div class="bg-card border border-border rounded-3xl p-8"><div class="flex items-center gap-4 mb-4"><div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center"><svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg></div><span class="text-3xl font-heading font-bold text-muted-foreground/30">03</span></div><h3 class="text-xl font-heading font-semibold mb-2 text-foreground">Perfect for Gifting</h3><p class="text-muted-foreground">Thoughtful party favors, thank-you gifts that leave an impression.</p></div></div></div><div class="grid md:grid-cols-3 gap-6"><div class="bg-secondary rounded-3xl p-8"><div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6"><svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg></div><h3 class="text-xl font-heading font-semibold mb-2 text-foreground">Quality Guaranteed</h3><p class="text-muted-foreground text-sm">100% satisfaction guaranteed on every order.</p></div><div class="bg-secondary rounded-3xl p-8"><div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mb-6"><svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><h3 class="text-xl font-heading font-semibold mb-2 text-foreground">Fast Turnaround</h3><p class="text-muted-foreground text-sm">Quick processing so you get your magnets when you need them.</p></div><div class="bg-secondary rounded-3xl p-8"><div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6"><svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><h3 class="text-xl font-heading font-semibold mb-2 text-foreground">Personal Support</h3><p class="text-muted-foreground text-sm">Direct contact with the maker for any questions.</p></div></div></div></section><section data-section-handle="featured-collection" data-section-type="products" class="py-24 bg-card"><div class="max-w-7xl mx-auto px-6"><div class="text-center mb-16"><span class="text-sm uppercase tracking-widest text-primary font-medium">Our Products</span><h2 class="text-4xl md:text-5xl font-heading font-semibold mt-4 text-foreground">Choose Your Style</h2><p class="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">Square or round – we've got the perfect magnet for your memories</p></div><div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto"><div class="group bg-background rounded-3xl overflow-hidden border border-border"><div class="p-6"><div class="aspect-square rounded-2xl overflow-hidden bg-secondary mb-6"><img src="/assets/square-magnets-closeup-CSoEi5eN.jpg" alt="Square photo magnets collection" class="w-full h-full object-cover"></div><div class="flex items-start justify-between mb-4"><div><h3 class="text-2xl font-heading font-semibold text-foreground">Custom Photo Magnets</h3><p class="text-muted-foreground mt-1">2 x 2 inch square magnets</p></div><div class="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center"><div class="w-6 h-6 rounded bg-primary/30"></div></div></div><p class="text-2xl font-heading font-semibold text-primary mb-6">From $14.99 <span class="text-base font-body font-normal text-muted-foreground">(Set of 4)</span></p><button class="w-full py-4 bg-primary text-primary-foreground font-semibold rounded-xl text-lg hover:shadow-lg hover:shadow-primary/20">Add to Cart</button></div></div><div class="group bg-background rounded-3xl overflow-hidden border border-border"><div class="p-6"><div class="aspect-square rounded-2xl overflow-hidden bg-secondary mb-6"><img src="/assets/save-the-date-magnets-2hjh2OrO.jpg" alt="Save the date magnets for weddings" class="w-full h-full object-cover"></div><div class="flex items-start justify-between mb-4"><div><h3 class="text-2xl font-heading font-semibold text-foreground">Save The Date Magnets</h3><p class="text-muted-foreground mt-1">3.25 x 4 inch vinyl magnets</p></div><div class="w-12 h-12 rounded-lg bg-accent/10 border border-accent/20 flex items-center justify-center"><div class="w-5 h-7 rounded bg-accent/30"></div></div></div><p class="text-2xl font-heading font-semibold text-primary mb-6">From $55.00 <span class="text-base font-body font-normal text-muted-foreground">(Set of 10)</span></p><button class="w-full py-4 bg-primary text-primary-foreground font-semibold rounded-xl text-lg hover:shadow-lg hover:shadow-primary/20">Add to Cart</button></div></div></div></div></section><section data-section-handle="rich-text" data-section-type="subscribe" class="py-24 bg-background"><div class="max-w-7xl mx-auto px-6"><div class="grid lg:grid-cols-12 gap-8"><div class="lg:col-span-7 bg-gradient-to-br from-secondary to-muted rounded-3xl p-10 lg:p-14"><div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><svg class="w-5 h-5 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="text-sm uppercase tracking-widest text-primary font-medium">Newsletter</span></div><h2 class="text-3xl md:text-4xl font-heading font-semibold mb-4 text-foreground">Stay Connected</h2><p class="text-lg text-muted-foreground mb-8 max-w-lg">Join our community and receive updates on new products, special offers, and memory-keeping tips.</p><form class="flex flex-col sm:flex-row gap-4"><input type="email" placeholder="Enter your email" class="flex-1 px-6 py-4 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"><button type="submit" class="px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:shadow-lg hover:shadow-primary/20">Subscribe</button></form></div><div class="lg:col-span-5 grid gap-4"><div class="bg-card border border-border rounded-2xl p-6 flex items-center gap-5"><div class="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0"><svg class="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div><h3 class="font-heading font-semibold text-foreground">Exclusive Discounts</h3><p class="text-sm text-muted-foreground">Subscribers get 10% off first order</p></div></div><div class="bg-card border border-border rounded-2xl p-6 flex items-center gap-5"><div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0"><svg class="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg></div><div><h3 class="font-heading font-semibold text-foreground">Early Access</h3><p class="text-sm text-muted-foreground">Be first to know about new products</p></div></div><div class="bg-card border border-border rounded-2xl p-6 flex items-center gap-5"><div class="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0"><svg class="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div><h3 class="font-heading font-semibold text-foreground">Tips &amp; Inspiration</h3><p class="text-sm text-muted-foreground">Creative ideas for your photo magnets</p></div></div></div></div></div></section><section data-section-handle="collapsible-content" data-section-type="faq" class="py-24 bg-card"><div class="max-w-4xl mx-auto px-6"><div class="text-center mb-16"><span class="text-sm uppercase tracking-widest text-primary font-medium">Support</span><h2 class="text-4xl md:text-5xl font-heading font-semibold mt-4 text-foreground">Frequently Asked Questions</h2></div><div class="space-y-4"><details class="group bg-background border border-border rounded-2xl overflow-hidden"><summary class="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-lg text-foreground">How do I order custom photo magnets?<svg class="w-5 h-5 text-muted-foreground group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary><div class="px-6 pb-6 text-muted-foreground">Simply upload your photos through our website, select your quantity (square or round format), and we'll take care of the rest. Each magnet is handmade with care and shipped directly to you.</div></details><details class="group bg-background border border-border rounded-2xl overflow-hidden"><summary class="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-lg text-foreground">What shapes and sizes are available?<svg class="w-5 h-5 text-muted-foreground group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary><div class="px-6 pb-6 text-muted-foreground">We offer 2x2 inch square photo magnets and Save the Date magnets in 3.25x4 inch or 2.75x3.5 inch sizes. Square format is our specialty!</div></details><details class="group bg-background border border-border rounded-2xl overflow-hidden"><summary class="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-lg text-foreground">How long does shipping take?<svg class="w-5 h-5 text-muted-foreground group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary><div class="px-6 pb-6 text-muted-foreground">We ship within the United States via USPS and UPS. Standard shipping typically takes 5-7 business days after your order is processed.</div></details><details class="group bg-background border border-border rounded-2xl overflow-hidden"><summary class="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-lg text-foreground">Can I order in bulk for events?<svg class="w-5 h-5 text-muted-foreground group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary><div class="px-6 pb-6 text-muted-foreground">Yes! Our Save the Date magnets come in sets up to 100. Contact us for special bulk pricing on weddings and events.</div></details></div></div></section><section data-section-handle="image-banner" data-section-type="cta" class="relative py-32 overflow-hidden"><svg class="w-full h-full" viewBox="0 0 1440 600" fill="none" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0px;"><defs><linearGradient id="ctaGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="hsl(199, 89%, 48%)"></stop><stop offset="100%" stop-color="hsl(210, 80%, 42%)"></stop></linearGradient></defs><rect width="1440" height="600" fill="url(#ctaGradient)"></rect><circle cx="100" cy="100" r="300" fill="hsl(210, 25%, 97%)" fill-opacity="0.08"></circle><circle cx="1350" cy="500" r="350" fill="hsl(217, 91%, 60%)" fill-opacity="0.15"></circle><circle cx="700" cy="-100" r="200" fill="hsl(210, 25%, 97%)" fill-opacity="0.05"></circle><rect x="100" y="400" width="100" height="100" rx="12" fill="hsl(210, 25%, 97%)" fill-opacity="0.12" transform="rotate(-15 150 450)"></rect><rect x="1250" y="100" width="80" height="80" rx="10" fill="hsl(210, 25%, 97%)" fill-opacity="0.1" transform="rotate(20 1290 140)"></rect><rect x="200" y="150" width="60" height="60" rx="8" fill="hsl(217, 91%, 60%)" fill-opacity="0.15"></rect><rect x="1100" y="420" width="70" height="70" rx="8" fill="hsl(210, 25%, 97%)" fill-opacity="0.08"></rect><path d="M0 400 Q 300 350 600 400 T 1200 380 T 1440 420" stroke="hsl(210, 25%, 97%)" stroke-width="2" stroke-opacity="0.1" fill="none"></path></svg><div class="relative z-10 max-w-4xl mx-auto px-6 text-center"><div class="inline-flex items-center gap-2 bg-primary-foreground/20 rounded-full px-5 py-2 mb-8"><span class="w-2 h-2 rounded-full bg-primary-foreground"></span><span class="text-primary-foreground font-medium">Limited Time: Free Shipping on Orders $50+</span></div><h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold mb-6 text-primary-foreground">Ready to Preserve Your Memories?</h2><p class="text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto leading-relaxed">Transform your favorite photos into beautiful, lasting square magnets today.</p><div class="flex flex-wrap justify-center gap-4"><a href="/collections/all" class="inline-flex items-center justify-center px-12 py-5 bg-primary-foreground text-primary font-bold rounded-xl text-lg shadow-2xl shadow-black/20 hover:shadow-3xl hover:-translate-y-1">Start Creating Now<svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a><a href="/pages/contact" class="inline-flex items-center justify-center px-10 py-5 border-2 border-primary-foreground text-primary-foreground font-semibold rounded-xl text-lg hover:bg-primary-foreground/10">Contact Us</a></div></div></section></main><footer data-section-handle="footer" class="bg-background border-t border-border"><div class="max-w-7xl mx-auto px-6 py-16"><div class="grid md:grid-cols-4 gap-12"><div class="md:col-span-2"><span class="text-2xl font-semibold tracking-tight font-heading text-foreground">Magnet Love</span><p class="text-muted-foreground mt-4 max-w-md">Transforming your cherished photos into stunning, handmade magnets. Crafted with love in Arizona 🌵</p><div class="flex gap-4 mt-6"><a href="https://instagram.com/magnetloveco" class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10" aria-label="Instagram"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a><a href="mailto:hello@magnetlove.co" class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10" aria-label="Email"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a></div></div><div><h4 class="font-heading font-semibold mb-4 text-foreground">Shop</h4><ul class="space-y-3 text-muted-foreground"><li><a href="/collections/photo-magnets" class="hover:text-primary">Photo Magnets</a></li><li><a href="/collections/save-the-date" class="hover:text-primary">Save The Date</a></li><li><a href="/collections/all" class="hover:text-primary">All Products</a></li></ul></div><div><h4 class="font-heading font-semibold mb-4 text-foreground">Help</h4><ul class="space-y-3 text-muted-foreground"><li><a href="/pages/about" class="hover:text-primary">Our Story</a></li><li><a href="/pages/faq" class="hover:text-primary">FAQ</a></li><li><a href="/pages/contact" class="hover:text-primary">Contact</a></li><li><a href="/pages/shipping" class="hover:text-primary">Shipping Info</a></li></ul></div></div><div class="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"><p class="text-sm text-muted-foreground">© 2024 Magnet Love. All rights reserved.</p><div class="flex gap-6 text-sm text-muted-foreground"><a href="/pages/privacy" class="hover:text-primary">Privacy Policy</a><a href="/pages/terms" class="hover:text-primary">Terms of Service</a></div></div></div></footer></div></div><script src="https://cdn.gpteng.co/lovable.js" type="module"></script>
 
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="/" class="logo">Magnet Love</a>
+                <nav class="nav">
+                    <a href="/collections/photo-magnets">Photo Magnets</a>
+                    <a href="/collections/save-the-date">Save The Date</a>
+                    <a href="/pages/about">Our Story</a>
+                    <a href="/pages/contact">Contact</a>
+                </nav>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn" aria-label="Search">
+                    <svg fill="none" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 1 1 2.85 3.5a5.784 5.784 0 0 1 8.18 8.18m.26 1.12a6.78 6.78 0 1 1 .72-.7l5.4 5.4a.5.5 0 1 1-.71.7z" clip-rule="evenodd"></path></svg>
+                </button>
+                <button class="icon-btn" aria-label="Account">
+                    <svg fill="none" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M6 4.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8m5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15M9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35" clip-rule="evenodd"></path></svg>
+                </button>
+                <button class="icon-btn" aria-label="Cart">
+                    <svg fill="none" viewBox="0 0 40 40"><path fill="currentColor" fill-rule="evenodd" d="M15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33L28.4 11.8zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1-9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
 
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <svg class="hero-svg" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="xMidYMid slice">
+            <rect width="1440" height="900" fill="hsl(210, 25%, 97%)"/>
+            <circle cx="1200" cy="150" r="300" fill="hsl(199, 89%, 48%)" fill-opacity="0.08"/>
+            <circle cx="1350" cy="450" r="200" fill="hsl(217, 91%, 60%)" fill-opacity="0.06"/>
+            <circle cx="100" cy="700" r="250" fill="hsl(199, 89%, 48%)" fill-opacity="0.05"/>
+            <rect x="1100" y="500" width="120" height="120" rx="8" fill="hsl(210, 20%, 93%)" stroke="hsl(199, 89%, 48%)" stroke-width="2"/>
+            <rect x="1260" y="620" width="80" height="80" rx="6" fill="hsl(199, 89%, 48%)" fill-opacity="0.15"/>
+            <rect x="50" y="300" width="100" height="100" rx="8" fill="hsl(210, 20%, 93%)" stroke="hsl(210, 20%, 88%)" stroke-width="2"/>
+            <rect x="1300" y="180" width="70" height="70" rx="6" fill="hsl(217, 91%, 60%)" fill-opacity="0.12"/>
+            <path d="M0 600 Q 400 500 800 600 T 1440 550" stroke="hsl(199, 89%, 48%)" stroke-width="2" stroke-opacity="0.1" fill="none"/>
+            <path d="M0 650 Q 350 550 700 650 T 1440 600" stroke="hsl(217, 91%, 60%)" stroke-width="2" stroke-opacity="0.08" fill="none"/>
+        </svg>
+        <div class="hero-content container">
+            <div class="hero-grid">
+                <div>
+                    <span class="hero-badge">Handmade with Love in Arizona 🌵</span>
+                    <h1>Turn Your <span>Memories</span> Into Magnets</h1>
+                    <p class="hero-text">Transform your cherished photos into beautiful handcrafted magnets. Square and round formats – perfect for fridges, lockers, and heartfelt gifts.</p>
+                    <div class="hero-buttons">
+                        <a href="/collections/all" class="btn-primary">
+                            Shop Now
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                        <a href="/pages/about" class="btn-outline">Our Story</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrap">
+                    <img src="/src/assets/hero-magnets-fridge.jpg" alt="Square photo magnets on refrigerator">
+                </div>
+            </div>
+        </div>
+    </section>
 
-</body></html>
+    <!-- Our Story Section -->
+    <section class="section section-card">
+        <div class="container">
+            <div class="story-intro">
+                <div>
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">From Photo Lover to Magnet Maker</h2>
+                    <p style="margin-top: 2rem;">Hi, I'm Ivette! As a passionate photo taker and magnet collector, I created Magnet Love to combine my two loves. With thousands of photos stored digitally, I realized what better way of displaying them than on beautiful square magnets!</p>
+                </div>
+                <div class="story-founder-wrap">
+                    <img src="/src/assets/founder-portrait.jpg" alt="Ivette, founder of Magnet Love">
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card gradient">
+                    <div class="stat-number">2000+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10k+</div>
+                    <div class="stat-label">Magnets Created</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5★</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">AZ</div>
+                    <div class="stat-label">Based in Arizona 🌵</div>
+                </div>
+            </div>
+
+            <div class="mission-grid">
+                <div>
+                    <div class="mission-quote">
+                        <p>"At Magnet Love, we transform your cherished photos into stunning, handmade magnets that preserve your memories for years to come."</p>
+                        <p class="author">— Ivette, Founder</p>
+                    </div>
+                    <div class="mini-features">
+                        <div class="mini-feature">
+                            <div class="mini-feature-icon">
+                                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                            </div>
+                            <div class="mini-feature-title">Made with Love</div>
+                        </div>
+                        <div class="mini-feature">
+                            <div class="mini-feature-icon accent">
+                                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                            </div>
+                            <div class="mini-feature-title">Premium Quality</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-images">
+                    <div class="mission-image-wrap">
+                        <img src="/src/assets/magnets-handmade-process.jpg" alt="Handcrafted square photo magnets">
+                    </div>
+                    <div class="mission-image-wrap offset">
+                        <img src="/src/assets/square-magnets-closeup.jpg" alt="Square magnets closeup on marble">
+                    </div>
+                    <div class="mission-image-wrap wide">
+                        <img src="/src/assets/magnets-collection-grid.jpg" alt="Collection of square photo magnets">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section">
+        <div class="container">
+            <div class="features-header">
+                <div>
+                    <span class="section-label">Why Choose Us</span>
+                    <h2 class="section-title">What Makes Us Special</h2>
+                </div>
+                <p>Every magnet tells a story. Here's why thousands of customers trust Magnet Love.</p>
+            </div>
+
+            <div class="features-main">
+                <div class="feature-big">
+                    <div class="feature-big-header">
+                        <div class="feature-icon-big">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                        </div>
+                        <span class="feature-number">01</span>
+                    </div>
+                    <h3>Handcrafted with Care</h3>
+                    <p>Each magnet is individually made by hand, ensuring quality and attention to detail. No mass production – just genuine craftsmanship.</p>
+                </div>
+                <div class="features-side">
+                    <div class="feature-card">
+                        <div class="feature-card-header">
+                            <div class="feature-icon">
+                                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                            </div>
+                            <span class="feature-card-number">02</span>
+                        </div>
+                        <h3>Premium Materials</h3>
+                        <p>High-quality materials that preserve your memories beautifully for years.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card-header">
+                            <div class="feature-icon accent">
+                                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+                            </div>
+                            <span class="feature-card-number">03</span>
+                        </div>
+                        <h3>Perfect for Gifting</h3>
+                        <p>Thoughtful party favors, thank-you gifts that leave an impression.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-bottom">
+                <div class="feature-small">
+                    <div class="feature-small-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                    </div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>100% satisfaction guaranteed on every order.</p>
+                </div>
+                <div class="feature-small">
+                    <div class="feature-small-icon accent">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3>Fast Turnaround</h3>
+                    <p>Quick processing so you get your magnets when you need them.</p>
+                </div>
+                <div class="feature-small">
+                    <div class="feature-small-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3>Personal Support</h3>
+                    <p>Direct contact with the maker for any questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section section-card">
+        <div class="container">
+            <div class="products-header">
+                <span class="section-label">Our Products</span>
+                <h2 class="section-title">Choose Your Style</h2>
+                <p>Square or round – we've got the perfect magnet for your memories</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="/src/assets/square-magnets-closeup.jpg" alt="Square photo magnets collection">
+                    </div>
+                    <div class="product-header">
+                        <div>
+                            <h3>Custom Photo Magnets</h3>
+                            <p class="subtitle">2 x 2 inch square magnets</p>
+                        </div>
+                        <div class="product-icon">
+                            <div class="shape"></div>
+                        </div>
+                    </div>
+                    <p class="product-price">From $14.99 <span>(Set of 4)</span></p>
+                    <button class="btn-full">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="/src/assets/save-the-date-magnets.jpg" alt="Save the date magnets for weddings">
+                    </div>
+                    <div class="product-header">
+                        <div>
+                            <h3>Save The Date Magnets</h3>
+                            <p class="subtitle">3.25 x 4 inch vinyl magnets</p>
+                        </div>
+                        <div class="product-icon accent">
+                            <div class="shape"></div>
+                        </div>
+                    </div>
+                    <p class="product-price">From $55.00 <span>(Set of 10)</span></p>
+                    <button class="btn-full">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="section">
+        <div class="container">
+            <div class="subscribe-grid">
+                <div class="subscribe-main">
+                    <div class="subscribe-badge">
+                        <div class="subscribe-badge-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <span class="section-label">Newsletter</span>
+                    </div>
+                    <h2>Stay Connected</h2>
+                    <p>Join our community and receive updates on new products, special offers, and memory-keeping tips.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="subscribe-benefits">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Exclusive Discounts</h3>
+                            <p>Subscribers get 10% off first order</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon primary">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+                        </div>
+                        <div>
+                            <h3>Early Access</h3>
+                            <p>Be first to know about new products</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Tips & Inspiration</h3>
+                            <p>Creative ideas for your photo magnets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-card">
+        <div class="container">
+            <div class="faq-header">
+                <span class="section-label">Support</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>
+                        How do I order custom photo magnets?
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="faq-answer">Simply upload your photos through our website, select your quantity (square or round format), and we'll take care of the rest. Each magnet is handmade with care and shipped directly to you.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        What shapes and sizes are available?
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="faq-answer">We offer 2x2 inch square photo magnets and Save the Date magnets in 3.25x4 inch or 2.75x3.5 inch sizes. Square format is our specialty!</div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        How long does shipping take?
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="faq-answer">We ship within the United States via USPS and UPS. Standard shipping typically takes 5-7 business days after your order is processed.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        Can I order in bulk for events?
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="faq-answer">Yes! Our Save the Date magnets come in sets up to 100. Contact us for special bulk pricing on weddings and events.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <svg class="cta-svg" viewBox="0 0 1440 600" fill="none" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <linearGradient id="ctaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="hsl(199, 89%, 48%)"/>
+                    <stop offset="100%" stop-color="hsl(210, 80%, 42%)"/>
+                </linearGradient>
+            </defs>
+            <rect width="1440" height="600" fill="url(#ctaGradient)"/>
+            <circle cx="100" cy="100" r="300" fill="hsl(210, 25%, 97%)" fill-opacity="0.08"/>
+            <circle cx="1350" cy="500" r="350" fill="hsl(217, 91%, 60%)" fill-opacity="0.15"/>
+            <circle cx="700" cy="-100" r="200" fill="hsl(210, 25%, 97%)" fill-opacity="0.05"/>
+            <rect x="100" y="400" width="100" height="100" rx="12" fill="hsl(210, 25%, 97%)" fill-opacity="0.12" transform="rotate(-15 150 450)"/>
+            <rect x="1250" y="100" width="80" height="80" rx="10" fill="hsl(210, 25%, 97%)" fill-opacity="0.1" transform="rotate(20 1290 140)"/>
+            <rect x="200" y="150" width="60" height="60" rx="8" fill="hsl(217, 91%, 60%)" fill-opacity="0.15"/>
+            <rect x="1100" y="420" width="70" height="70" rx="8" fill="hsl(210, 25%, 97%)" fill-opacity="0.08"/>
+            <path d="M0 400 Q 300 350 600 400 T 1200 380 T 1440 420" stroke="hsl(210, 25%, 97%)" stroke-width="2" stroke-opacity="0.1" fill="none"/>
+        </svg>
+        <div class="cta-content container">
+            <div class="cta-badge">
+                <span class="cta-badge-dot"></span>
+                <span>Limited Time: Free Shipping on Orders $50+</span>
+            </div>
+            <h2>Ready to Preserve Your Memories?</h2>
+            <p>Transform your favorite photos into beautiful, lasting square magnets today.</p>
+            <div class="cta-buttons">
+                <a href="/collections/all" class="btn-white">
+                    Start Creating Now
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <a href="/pages/contact" class="btn-ghost">Contact Us</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="logo">Magnet Love</span>
+                <p>Transforming your cherished photos into stunning, handmade magnets. Crafted with love in Arizona 🌵</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/magnetloveco" class="social-link" aria-label="Instagram">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="mailto:hello@magnetlove.co" class="social-link" aria-label="Email">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="/collections/photo-magnets">Photo Magnets</a></li>
+                    <li><a href="/collections/save-the-date">Save The Date</a></li>
+                    <li><a href="/collections/all">All Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="/pages/about">Our Story</a></li>
+                    <li><a href="/pages/faq">FAQ</a></li>
+                    <li><a href="/pages/contact">Contact</a></li>
+                    <li><a href="/pages/shipping">Shipping Info</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Magnet Love. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="/pages/privacy">Privacy Policy</a>
+                <a href="/pages/terms">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
